@@ -1,0 +1,44 @@
+{
+  "uuid": "7f2c8f9a-8a7f-4bb1-b7dd-5b9b4b1b0c2a",
+  "lastMigration": 25,
+  "name": "Telecom CRM Mock",
+  "endpointPrefix": "",
+  "latency": 0,
+  "routes": [
+    {
+      "uuid": "d111c6a5-7d8c-4b1a-8a0d-9c9e5de17a1a",
+      "type": "http",
+      "method": "get",
+      "endpoint": "customers",
+      "responses": [
+        {
+          "uuid": "a3a06f77-6e0c-4a6a-8c6f-04a4f8aa3f2e",
+          "body": "[\n  {\n    \"email\": \"ahmed.salah@telco.tn\",\n    \"nom\": \"Ben Salah\",\n    \"prenom\": \"Ahmed\",\n    \"adresse\": \"Tunis, Tunisia\",\n    \"type\": \"simple\"\n  },\n  {\n    \"email\": \"sarra.khelifi@telco.tn\",\n    \"nom\": \"Khelifi\",\n    \"prenom\": \"Sarra\",\n    \"adresse\": \"Sousse, Tunisia\",\n    \"type\": \"simple\"\n  },\n  {\n    \"email\": \"m.trabelsi@enterprise.tn\",\n    \"nom\": \"Trabelsi\",\n    \"prenom\": \"Mohamed\",\n    \"adresse\": \"Sfax, Tunisia\",\n    \"type\": \"enterprise\"\n  }\n]",
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            { "key": "Content-Type", "value": "application/json" }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e1b6bdf5-4cf7-4216-a2d6-9b1d2c1f65c1",
+      "type": "http",
+      "method": "get",
+      "endpoint": "contracts",
+      "responses": [
+        {
+          "uuid": "9d1bdcab-5f7a-4a4e-8f10-0a91b74c3a21",
+          "body": "[\n  {\n    \"customer_email\": \"ahmed.salah@telco.tn\",\n    \"offer_name\": \"Mobile Pro\",\n    \"start_date\": \"2024-01-01\",\n    \"end_date\": null,\n    \"status\": \"active\"\n  },\n  {\n    \"customer_email\": \"sarra.khelifi@telco.tn\",\n    \"offer_name\": \"Mobile Basic\",\n    \"start_date\": \"2024-02-10\",\n    \"end_date\": null,\n    \"status\": \"active\"\n  },\n  {\n    \"customer_email\": \"m.trabelsi@enterprise.tn\",\n    \"offer_name\": \"Unlimited\",\n    \"start_date\": \"2024-03-01\",\n    \"end_date\": null,\n    \"status\": \"active\"\n  }\n]",
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            { "key": "Content-Type", "value": "application/json" }
+          ]
+        }
+      ]
+    }
+  ],
+  "folders": []
+}
